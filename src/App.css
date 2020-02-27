@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+span {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+}
+
+.nav-bar{
+  height: 100px;
+  width: 100%;
+  background-color: #61dafb;
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+}
