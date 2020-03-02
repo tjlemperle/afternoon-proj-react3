@@ -26,14 +26,16 @@ class Buttons extends Component{
 
     render(){
         return(
-            <div>
+            <div class='contentContainer'>
                 <section>
-                    <h1 style={{float: 'right'}}>
-                        {data[this.state.index].id}/25
-                    </h1>
-                    <h1>
-                        Name: {data[this.state.index].name.first} {' '}
-                        <span>{data[this.state.index].name.last}</span>
+                    <div class='id'>
+                        <h1>
+                           {data[this.state.index].id}/25
+                        </h1>
+                    </div>
+                    <h1 class='name'>
+                        {data[this.state.index].name.first} {' '}
+                        {data[this.state.index].name.last}
                     </h1>
                     <h1>
                         From: <span>{data[this.state.index].city}</span>
@@ -45,19 +47,27 @@ class Buttons extends Component{
                         Employer: <span>{data[this.state.index].employer}</span>
                     </h1>
                     <h1>
-                        Favorite Movies: {data[this.state.index].favoriteMovies[0]}
+                        Favorite Movies: 
                     </h1>
-                        <ol>
+                        <ol class='list'>
                             <li>{data[this.state.index].favoriteMovies[0]}</li>
                             <li>{data[this.state.index].favoriteMovies[1]}</li>
                             <li>{data[this.state.index].favoriteMovies[2]}</li>
                         </ol>
                 </section>
-                <button onClick={this.handlePrevious}>Previous</button>
-                {/* <button>Edit</button>
-                <button>Delete</button>
-                <button>New</button> */}
-                <button onClick={this.handleNext}>Next</button>
+                <div class='buttons'>                
+                    <div>
+                         <button onClick={this.handlePrevious}   >Previous</button>
+                    </div>
+                    <div>
+                        {/* <button>Edit</button>
+                        <button>Delete</button>
+                        <button>New</button> */}
+                    </div>
+                    <div>
+                        <button onClick={this.handleNext}>Next</button>
+                    </div>
+                </div>
             </div>
         )
     }

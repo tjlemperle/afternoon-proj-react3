@@ -15,7 +15,7 @@ class App extends Component{
 
   render(){
     return(
-      <div>
+      <div class='app'>
         <div class='nav-bar'><h2>HOME</h2></div>
         {/* <Data /> */}
         {/* <Content /> */}
